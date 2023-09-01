@@ -1,0 +1,22 @@
+CREATE TABLE phones (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, shelf INTEGER, price INTEGER, camera INTEGER;
+INSERT INTO phones values (1, "IPhone 10", 3, 1, 4, 2);
+INSERT INTO Phones values (2, "Samsung 20', 16, 2, 4, 3);
+INSERT INTO phones values (3, "IPhone 11", 4, 3, 2, 2);
+INSERT INTO phones values (4, "IPhone 12", 3, 3, 4, 3);
+INSERT INTO phones values (5, "Samsung 21", 10, 4, 5, 4);
+INSERT INTO phones values (6, "IPhone 13", 1, 5, 5, 4);
+INSERT INTO phones values (7, "Nokia 5", 4, 5, 3, 4);
+INSERT INTO phones values (8, "Razor 2", 5, 2, 3, 0);
+INSERT INTO phones values (9, "Motorolla 2", 11, 6, 15, 2);
+INSERT INTO phones values (10, "IPhone 14", 1, 1, 2, 4);
+INSERT INTO phones values (11, "IPhone15", 0, 0, 1, 4);
+INSERT INTO phones values (12, "Gphone 3",7, 3, 1, 3);
+INSERT INTO phones values (13, "phone 5",2, 4, 6, 2);
+INSERT INTO phones values (14, "phone 8",2, 3, 4, 3);
+INSERT INTO phones values (15, "phone 10", 1,2,3,4);
+
+--display database ordered by price.
+SELECT * FROM phones ORDER BY price;
+
+-- display each phone with quantity less than 7 ordered by shelf
+SELECT * FROM phones WHERE quantity <7 ORDER BY shelf;
